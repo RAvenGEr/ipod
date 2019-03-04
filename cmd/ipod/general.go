@@ -42,6 +42,8 @@ func (d *DevGeneral) LingoProtocolVersion(lingo uint8) (major uint8, minor uint8
 	switch lingo {
 	case 0x00:
 		return 1, 1
+	case 0x04:
+		return 1, 1
 	case 0x0a:
 		return 1, 3
 	default:
