@@ -179,7 +179,7 @@ func Lookup(id LingoCmdID, payloadSize int) (LookupResult, bool) {
 	if len(payloads) == 1 {
 		return LookupResult{
 			Payload:     reflect.New(payloads[0]).Interface(),
-			Transaction: true,
+			Transaction: false,
 		}, true
 	}
 
