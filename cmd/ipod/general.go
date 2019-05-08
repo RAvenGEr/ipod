@@ -5,8 +5,7 @@ import (
 	"fmt"
 
 	"github.com/davecgh/go-spew/spew"
-
-	"github.com/oandrew/ipod/lingo-general"
+	general "github.com/oandrew/ipod/lingo-general"
 
 	"github.com/fullsailor/pkcs7"
 )

@@ -15,11 +15,11 @@ import (
 
 	"github.com/oandrew/ipod"
 	"github.com/oandrew/ipod/hid"
-	"github.com/oandrew/ipod/lingo-audio"
-	"github.com/oandrew/ipod/lingo-dispremote"
-	"github.com/oandrew/ipod/lingo-extremote"
-	"github.com/oandrew/ipod/lingo-general"
-	"github.com/oandrew/ipod/lingo-simpleremote"
+	audio "github.com/oandrew/ipod/lingo-audio"
+	dispremote "github.com/oandrew/ipod/lingo-dispremote"
+	extremote "github.com/oandrew/ipod/lingo-extremote"
+	general "github.com/oandrew/ipod/lingo-general"
+	simpleremote "github.com/oandrew/ipod/lingo-simpleremote"
 	"github.com/oandrew/ipod/trace"
 )
 
