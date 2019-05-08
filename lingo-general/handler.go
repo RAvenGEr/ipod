@@ -124,6 +124,9 @@ func HandleGeneral(req *ipod.Command, tr ipod.CommandWriter, dev DeviceGeneral) 
 		ipod.Respond(req, tr, &ReturnTransportMaxPayloadSize{MaxPayload: dev.MaxPayload()})
 	case *IdentifyDeviceLingoes:
 		ipod.Respond(req, tr, ackSuccess(req))
+		if msg.Options & 3 == 2 {
+			ipod.Send(tr, &GetDevAuthenticationInfo{})
+		}
 
 	//GetDevAuthenticationInfo
 	case *RetDevAuthenticationInfo:
